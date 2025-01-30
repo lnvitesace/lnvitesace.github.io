@@ -19,7 +19,7 @@ locale                   : "zh-CN"
 title                    : "Waking Dream"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "lnvitesace"
+name                     : "清醒梦境"
 description              : ""
 url                      : "https://lnvitesace.me"
 baseurl                  : # the subpath of your site, e.g. "/blog"
