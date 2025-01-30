@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "lnvitesace"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A Chinese college student who enjoys studying computer science"
-  location         : "Beijing, China"
+  bio              : 
+  location         : "Berkeley"
   email            : lnvitesace@gmail.com
   links:
     - label: "Email"
