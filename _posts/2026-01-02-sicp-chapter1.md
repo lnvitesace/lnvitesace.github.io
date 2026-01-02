@@ -29,7 +29,7 @@ Scheme的特性让我们很容易看到程序的结构。除了`cond`、`let`这
 这一章最核心的内容是，我们不仅可以抽象数据成一个名字，也可以抽象过程成一个名字。
 
  ```scheme
- (define (sqare x) (* x x))
+(define (sqare x) (* x x))
  ```
 
 这里我们知道`square`可以返回一个值的平方，但它是如何得出平方的，并不用关心。从此以后，`square`和`+`、`*`这样的原始运算没有什么实质性的区别，在我们看来，他们都是一个可以进行特定运算的过程。
@@ -59,7 +59,7 @@ $$
 1. 用第一种硬币
 2. 不用第一种硬币
 
-问题的解必定是这两种情况对应解的和。对于第一种情况，既然已经用了第一种硬币，那么解就是用所有种类硬币换`a - d`的换法，即``(cc (- amount (first-denomination kinds-of-coins)) kinds-of-coins)`其中`d`是第一种硬币的面值。对于第二种情况，既然不用第一种硬币，那么解就是除了第一种硬币以外剩下种类硬币换`a`的换法，即`(cc amount (- kinds-of-coins 1))`。
+问题的解必定是这两种情况对应解的和。对于第一种情况，既然已经用了第一种硬币，那么解就是用所有种类硬币换`a - d`的换法，即`(cc (- amount (first-denomination kinds-of-coins)) kinds-of-coins)`其中`d`是第一种硬币的面值。对于第二种情况，既然不用第一种硬币，那么解就是除了第一种硬币以外剩下种类硬币换`a`的换法，即`(cc amount (- kinds-of-coins 1))`。
 
 我们有自信他们能算出正确的值，但不关心怎么算的。设置合适的base case之后，函数就会魔法般的算出正确值。
 
@@ -216,5 +216,5 @@ $$
 
 这就是全章最后一个习题。
 
-MIT在2007年停止开设了SICP，现在6.001的课程是[Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)，在我看来并不是一个非常值得批判的决定。时代在进步，当前工程界的实践并不需要我们从头构建一个复杂系统，很多模块其他人已经替我们做好了，我们需要做的只是读文档，然后play around。[Programming by poking: why MIT stopped teaching SICP](https://link.zhihu.com/?target=http%3A//lambda-the-ultimate.org/node/5335)中节选的Gerry Sussman的观点也是如此。不过工程是一回事，学术是另一回事，如果你的目标是尽量理解这个世界运行的规则，那么SICP绝对是一本非常值得研究的书，它让你知道多么复杂的系统，多么身经百战成熟的库，也是从最小的模块开始，一步一步抽象到这一层的。
+MIT在2007年停止开设了SICP，现在6.001的课程是[Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)，在我看来并不是一个非常值得批判的决定。时代在进步，当前工程界的实践并不需要我们从头构建一个复杂系统，很多模块其他人已经替我们做好了，我们需要做的只是读文档，然后play around。[Programming by poking: why MIT stopped teaching SICP](http://lambda-the-ultimate.org/node/5335)中节选的Gerry Sussman的观点也是如此。不过工程是一回事，学术是另一回事，如果你的目标是尽量理解这个世界运行的规则，那么SICP绝对是一本非常值得研究的书，它让你知道多么复杂的系统，多么身经百战成熟的库，也是从最小的模块开始，一步一步抽象到这一层的。
 
